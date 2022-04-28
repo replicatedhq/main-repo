@@ -6,5 +6,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: if [ ${{ secrets.SECRET }} = 'so-secret' ]; then; echo "It matches"; fi;
-        shell: zsh
+      - run: if [ ${{ secrets.SECRET }} = 'so-secret' ]; then echo "It matches"; fi;
